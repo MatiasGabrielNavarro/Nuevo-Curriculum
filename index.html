@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4112fb8102.js" crossorigin="anonymous"></script>
+    <title>Mi curriculum</title>
+</head>
+<body>
+    <header class="header">
+          <nav>
+            <div class="container">
+           <ul class="header__div-ul">
+            <li class="header__div-li"> <a href="https://matiasgabrielnavarro.github.io/Proyecto/">Proyecto</a></li>
+            <li class="header__div-li"> <a href="informacion.html">Informacion</a></li>
+           </ul>
+          </nav>
+            </div>
+    </header>
+    
+        <section>
+          <div class="container">
+
+           <img src="imagenes/foto.jpeg" alt="foto anonimo">
+
+            <h1> Matias Gabriel</h1>
+            <h1> Desarrollador de software</h1>
+
+          </div>
+          
+          
+
+          <button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
+          <script>
+
+            function cambiarColorFondo() {
+
+                var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+                
+
+                document.body.style.backgroundColor = color;
+            }
+        </script>
+        </section>
+    <footer><p>UADE Tec Desarrollo de software</p></footer>
+             
+

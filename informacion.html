@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="informacion.css">
+    <script src="https://kit.fontawesome.com/4112fb8102.js" crossorigin="anonymous"></script>
+    <title>Informacion</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <div class="container">
+         <ul class="header__div-ul">
+          <li class="header__div-li"> <a href="https://matiasgabrielnavarro.github.io/Proyecto/">Proyecto</a></li>
+          <li class="header__div-li"> <a href="informacion.html">Informacion</a></li>
+         </ul>
+        </nav>
+          </div>
+  </header>
+    <section>
+     <h1>Informacion</h1>
+     <p>Nombre completo: Matias Gabriel<br>
+        Fecha de Nacimiento: 28/02/2003 <br>
+        Celular: 1134622039 <br>
+        Ciudad: San Fernando <br>
+        Contacto: magabriel2802@hotmail.com <br>
+        Experiencia laboral: No cuenta <br>
+        Educacion: Secundario Completo, <br> Universitario en curso. <br>
+</p>
+    <h1 class="cono">Conocimientos</h1>
+    <P>
+      HTML: AVANZADO <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br><br>
+      CSS: INTERMEDIO <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br><br>
+      JAVASCRIPT: BASICO <i class="fa-solid fa-star"></i> <br><br>
+      PYTHON: BASICO  <i class="fa-solid fa-star"></i> <br> <br>
+      <a href="index.html">volver al home</a>
+    </P>
+
+    <button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
+    <script>
+
+      function cambiarColorFondo() {
+
+          var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+          
+
+          document.body.style.backgroundColor = color;
+      }
+  </script>
+
+
+    </section>
+  
+
+
+
+
+    <footer><p>UADE Tec Desarrollo de software</p></footer>
+</body>
+</html>
