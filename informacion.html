@@ -12,8 +12,10 @@
         <nav>
           <div class="container">
          <ul class="header__div-ul">
-          <li class="header__div-li"> <a href="https://matiasgabrielnavarro.github.io/Proyecto/">Proyecto</a></li>
+          <li class="header__div-li"> <a href="index.html">Inicio</a></li>
           <li class="header__div-li"> <a href="informacion.html">Informacion</a></li>
+          <li class="Proyecto"> <a href="https://matiasgabrielnavarro.github.io/Proyecto/" >Proyecto</a></li>
+          <button id="cambiarColorBtn">Cambiar Color</button>
          </ul>
         </nav>
           </div>
@@ -34,20 +36,9 @@
       CSS: INTERMEDIO <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><br><br>
       JAVASCRIPT: BASICO <i class="fa-solid fa-star"></i> <br><br>
       PYTHON: BASICO  <i class="fa-solid fa-star"></i> <br> <br>
-      <a href="index.html">volver al home</a>
+
     </P>
 
-    <button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
-    <script>
-
-      function cambiarColorFondo() {
-
-          var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-          
-
-          document.body.style.backgroundColor = color;
-      }
-  </script>
 
 
     </section>
@@ -58,4 +49,18 @@
 
     <footer><p>UADE Tec Desarrollo de software</p></footer>
 </body>
+<script>
+  const cambiarColorBtn = document.getElementById('cambiarColorBtn');
+  const header = document.querySelector('.header');
+
+  cambiarColorBtn.addEventListener('click', function() {
+      // Generar valores RGB aleatorios
+      const red = Math.floor(Math.random() * 256);
+      const green = Math.floor(Math.random() * 256);
+      const blue = Math.floor(Math.random() * 256);
+
+      // Aplicar el nuevo color al encabezado
+      header.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+  });
+</script>
 </html>

@@ -14,35 +14,42 @@
            <ul class="header__div-ul">
             <li class="header__div-li"> <a href="https://matiasgabrielnavarro.github.io/Proyecto/">Proyecto</a></li>
             <li class="header__div-li"> <a href="informacion.html">Informacion</a></li>
+            <button id="cambiarColorBtn">Cambiar Color</button>
            </ul>
           </nav>
             </div>
     </header>
     
+    
         <section>
           <div class="container">
 
-           <img src="imagenes/foto.jpeg" alt="foto anonimo">
+           <img src="imagenes/foto.jpeg" alt="foto anonimo" class="mati">
+           <img src="imagenes/spidermannm.png" alt="" class="spide">
 
-            <h1> Matias Gabriel</h1>
-            <h1> Desarrollador de software</h1>
+            <h1 class="uno"> Matias Gabriel</h1>
+            <h1 class="dos"> Desarrollador de software</h1>
 
           </div>
           
           
 
-          <button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
-          <script>
-
-            function cambiarColorFondo() {
-
-                var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-                
-
-                document.body.style.backgroundColor = color;
-            }
-        </script>
         </section>
     <footer><p>UADE Tec Desarrollo de software</p></footer>
-             
+</body>  
+<script>
+  const cambiarColorBtn = document.getElementById('cambiarColorBtn');
+  const header = document.querySelector('.header');
+
+  cambiarColorBtn.addEventListener('click', function() {
+      // Generar valores RGB aleatorios
+      const red = Math.floor(Math.random() * 256);
+      const green = Math.floor(Math.random() * 256);
+      const blue = Math.floor(Math.random() * 256);
+
+      // Aplicar el nuevo color al encabezado
+      header.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+  });
+</script>
+</html>          
 

@@ -25,7 +25,7 @@ body {
     text-align: center;
   }
   .header .container {
-    padding: 1.2em;
+    padding: 3.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +45,13 @@ body {
     border-radius: 12px;
     margin-left: 20px;
   }
+  .Proyecto {
+    margin-top: 10px;
+  }
+   header button {
+    margin-top: 20px;
+    margin-left: 30px;
+   }
   
   
   
